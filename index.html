@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Contributing to PHP with RFCs</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <!--  <link rel="stylesheet" href="dist/theme/black.css" id="theme">-->
+
+  <link rel="stylesheet" href="custom/custom-theme.css" id="theme" />
+
+  <!-- Theme used for syntax-highlighted code -->
+  <link rel="stylesheet" href="custom/github.css" media="screen and (prefers-color-scheme: light)">
+  <link rel="stylesheet" href="custom/github-dark.css" media="screen and (prefers-color-scheme: dark)">
+
+  <style>
+.placeholder-single {
+  color: green !important;
+}
+.placeholder-multi {
+  color: red !important;
+}
+  </style>
+
+</head>
+<body class="skin-blue">
+<div class="reveal">
+  <footer>
+<!--    <img src="assets/makershub.svg" alt="Makershub.ai" />-->
+    <span class="name">@Crell@phpc.social</span>
+  </footer>
+	<div class="slides">
+    <section class="title">
+      <h1>Contributing to PHP with RFCs</h1>
+    </section>
+
+    <section id="presenter">
+      <h2>Larry Garfield</h2>
+      <h2><a href="https://phpc.social/@Crell">@Crell@phpc.social</a></h2>
+
+      <div class="layout-col vcentered">
+        <a href="http://bit.ly/php80"><img src="assets/exploring-php80.png" width="175px;" alt="Cover of Exploring PHP 8.0" /></a>
+        <a href="https://bit.ly/fn-php"><img src="assets/thinking-functionally.png" width="175px;" alt="Cover of Thinking Functionally in PHP" /></a>
+
+        <ul style="text-wrap: nowrap">
+          <li style="margin-top: 1em;">PHP-FIG Core Committee</li>
+          <li style="margin-top: 1em;">PHP Core Contributor</li>
+          <li style="margin-top: 1em;">General purpose pedant</li>
+          <li style="margin-top: 1em;"><a href="https://bit.ly/fn-php"><em>Thinking Functionally in PHP</em></a></li>
+          <li style="margin-top: 1em;">Available for hire!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <section>
+        <p class="oversize">So you want to be part of PHP...</p>
+        <img src="assets/running-elephpant.gif" alt="A running PHP elephant">
+      </section>
+    </section>
+
+
+    <div style="display:none">
+      * Why get involved?
+        * See what's coming
+        * Influence what's coming
+        * Join the team?
+      * How to get involved
+        * Joining the Internals Mailing list (deal with it)
+        * Etiquette
+        * See what's active: The wiki
+      * How RFCs happen
+        * Anyone can propose an idea
+        * Start with a "concept thread"
+        * If good feedback, request wiki access
+        * Write RFC, and POC.  Follow the template
+        * Post to list
+        * Discuss (and new discussion timing rules)
+        * Call a vote
+        * Voters - messy
+        * "Direct democracy" – For both good and bad
+        * Pass?  Go get it merged.  (May still be development.)
+      * History of aviz and hooks
+        * Originally proposed in 8.3
+        * Aviz failed.
+        * Tried to do hooks, but ran out of time.
+        * Started up again in 8.4, passed.
+        * Try aviz again, passed this time. Mostly due to different voters.
+        * "Who votes matters"
+
+    </div>
+
+    <section id="final">
+      <div class="layout-1up-2down">
+        <div style="grid-area: top; margin-top: 1em;">
+          <h2>Larry Garfield</h2>
+          <h2><a href="https://phpc.social/@Crell">@Crell@phpc.social</a></h2>
+        </div>
+        <div style="grid-area: left">
+          <h2>All about PHP 8!</h2>
+          <p><a href="https://bit.ly/php80">https://bit.ly/php80</a></p>
+          <p><a href="https://bit.ly/php80"><img src="assets/exploring-php80.png" width="175px;" alt="Cover of Exploring PHP 8.0" /></a></p>
+        </div>
+        <div style="grid-area: right">
+          <h2>Buy my book!</h2>
+          <p><a href="https://bit.ly/fn-php">https://bit.ly/fn-php</a></p>
+          <p><a href="https://bit.ly/fn-php"><img src="assets/thinking-functionally.png" width="175px;" alt="Cover of Thinking Functionally in PHP" /></a></p>
+        </div>
+      </div>
+      <h3><a href="https://www.garfieldtech.com/">https://www.garfieldtech.com/</a></h3>
+    </section>
+  </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="dist/plugin/zoom.js"></script>
+<script src="dist/plugin/notes.js"></script>
+<script src="dist/plugin/search.js"></script>
+<script src="dist/plugin/markdown.js"></script>
+<script src="dist/plugin/highlight.js"></script>
+<script src="custom/mermaid.js"></script>
+
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
+
+    // mermaid initialize config
+    mermaid: {
+       flowchart: {
+         curve: 'linear',
+       },
+    },
+
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ]
+  });
+</script>
+
+<!-- Custom Reveal extension scripts. -->
+<script src="custom/classer.js"></script>
+<script src="custom/countup.js"></script>
+<script src="custom/usecase.js"></script>
+
+</body>
+</html>
