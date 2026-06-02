@@ -143,6 +143,243 @@ img.emoji {
           <li class="fragment">Profit???</li>
         </ol>
       </section>
+      <section>
+        <h2>Have an idea</h2>
+        <ul>
+          <li class="fragment">Solves a real problem</li>
+          <li class="fragment">... for lots of people</li>
+          <li class="fragment">and cannot be reasonably done in user-space</li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li>Good features are targeted, specific, and precise.</li>
+            <li>The implementation may be large, but the feature itself is targeted</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Discuss the idea</h2>
+        <pre><code class="text" data-trim data-noescape>
+          To: internals@lists.php.net
+          From: me@example.com
+          Subject: [Proposal] Add configurable rot() function
+
+          Hi all.  I want to discuss adding a configurable `rot()` function
+          to PHP.  It would be more flexible than the existing `rot_13()`,
+          and allow rotating characters by any amount.  This will greatly improve
+          our ability to write secure encryption routines.
+
+          Eg:
+
+          ```
+          $encoded = rot('hello world', 5);
+          print $encoded; // prints "mjqqt btwqi"
+          ```
+        </code></pre>
+        <aside class="notes">
+          <ul>
+            <li>Explain what the idea is.</li>
+            <li>Include code examples if relevant.</li>
+            <li>Explain why it's valuable.</li>
+            <li>Markdown optional.</li>
+            <li>Could be one paragraph or many.</li>
+            <li>If the feedback is clearly negative...</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p>If the feedback is clearly negative...</p>
+        <img src="assets/frozen-let-it-go.gif" alt="Elsa from Frozen singing Let It Go" data-credit="https://tenor.com/view/frozen-let-it-go-disney-disney-princess-elsa-gif-3597313">
+      </section>
+      <section>
+        <p>If the feedback is positive...</p>
+        <img src="assets/do-it-star-wars.gif" alt="Palpatine from Star Wars: Revenge of the Sith saying 'Do it'" data-credit="https://tenor.com/view/do-it-star-wars-emperor-palpatine-palpatine-gif-7523581979863470761">
+      </section>
+      <section>
+        <h2>Implement the idea</h2>
+        <ul>
+          <li>Pull request against <a href="https://github.com/php/php-src/">https://github.com/php/php-src/</a></li>
+          <li class="fragment">Warning: It's all ugly C</li>
+          <li class="fragment">Doesn't have to be perfect, find edge cases</li>
+          <li class="fragment">Protip: Partner with someone</li>
+        </ul>
+        <p class="fragment">Optional<em class="fragment">-ish</em></p>
+        <aside class="notes">
+          <ul>
+            <li>PHP isn't written in C.</li>
+            <li>PHP is written in a custom macro language written in C</li>
+            <li>Some devs hate it when I say that, but it's true</li>
+            <li>Technically, an implementation is optional, but it's strongly recommended</li>
+            <li>Some will vote against RFCs that have no implementation yet</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Get Wiki access</h2>
+        <p>1. Sign up for free on <a href="wiki.php.net">wiki.php.net</a></p>
+        <pre class="fragment"><code class="text" data-trim data-noescape>
+          To: internals@lists.php.net
+          From: me@example.com
+          Subject: Wiki RFC access
+
+          Hi all.  I am requesting RFC edit access on wiki.php.net
+          so I can work on the rot() RFC.  My username is `me`.
+        </code></pre>
+        <aside class="notes">
+          <ul>
+            <li>Usually handled very quickly, within a day</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Write the RFC</h2>
+        <p>screenshot here</p>
+        <ul>
+          <li class="fragment">Be concise and precise</li>
+          <li class="fragment">Use code examples liberally</li>
+          <li class="fragment">Warning: Docuwiki, not Markdown</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Discuss (again)</h2>
+        <pre><code class="text" data-trim data-noescape>
+          To: internals@lists.php.net
+          From: me@example.com
+          Subject: [RFC] Add configurable rot() function
+
+          Hi all.  I'd like to open discussion on the rot() function
+          proposal.  The RFC is here:
+
+          https://wiki.php.net/rfc/arbitrary_rot
+
+          Looking forward to your feedback!
+        </code></pre>
+        <aside class="notes">
+          <ul>
+            <li>The [RFC] tag is required</li>
+            <li>Don't repeat the RFC in this email</li>
+            <li>Could be a ton of feedback, or almost none</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Discussion (again)</h2>
+        <ul>
+          <li class="fragment">Keep all replies in the one thread</li>
+          <li class="fragment">Expect the RFC and implementation to evolve</li>
+          <li class="fragment">Keep a changelog in the RFC</li>
+          <li class="fragment">Assume good faith; offer good faith</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Prepare for voting</h2>
+        <ul>
+          <li class="fragment">No change to the RFC for 2 weeks</li>
+          <li class="fragment">No substantive feedback for ~2 weeks</li>
+          <li class="fragment">You feel it's done</li>
+        </ul>
+        <pre class="fragment"><code class="text" data-trim data-noescape>
+          To: internals@lists.php.net
+          From: me@example.com
+          Subject: Re: [RFC] Add configurable rot() function
+
+          > Hi all.  I'd like to open discussion on the rot() function
+          > proposal.  The RFC is here:
+
+          > https://wiki.php.net/rfc/arbitrary_rot
+
+          Hi all.  As the discussion has died down, this is the Intent to Vote
+          notice.  I'll open the vote sometime on Wednesday, baring any other feedback
+          before then.
+        </code></pre>
+        <aside class="notes">
+          <ul>
+            <li>At least 48-hour heads-up that a vote will start soon</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Open the vote</h2>
+        <p>screencap of the voting widget</p>
+        <pre class="fragment"><code class="text" data-trim data-noescape>
+          To: internals@lists.php.net
+          From: me@example.com
+          Subject: [RFC][Vote] Add configurable rot() function
+
+          I have opened the vote on the configurable rot() function.  The vote
+          will end at 4pm UTC on July 3rd.
+
+          https://wiki.php.net/rfc/arbitrary_rot
+
+          Previous discussion thread: https://externals.io/message/130912
+        </code></pre>
+        <aside class="notes">
+          <ul>
+            <li>State whatever the time was in the widget</li>
+            <li>2/3 vote required for passage</li>
+            <li>High, but ensures broad support for any change</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>But what, who are the voters?</h2>
+        <img src="assets/pedro-monkey-puppet.gif" alt="A monkey puppet looking around awkwardly" class="fragment" data-credit="https://tenor.com/view/pedro-monkey-puppet-meme-awkward-gif-7230416695831822604">
+      </section>
+      <section>
+        <h2>Some stats</h2>
+        <dl>
+          <dt>Number of voters</dt>
+          <dd>~1500</dd>
+          <dt>Number that routinely vote</dt>
+          <dd>~100</dd>
+          <dt>Number that vote on any given RFC</dt>
+          <dd>~25</dd>
+        </dl>
+        <p class="fragment">Percentage of voters that also take part in the discussion: Too small</p>
+        <aside class="notes">
+          <ul>
+            <li>This is a major problem in the current system</li>
+            <li>Lots of resistance to change, sadly</li>
+            <li>There... is no canonical list of who has voting access.</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Becoming a voter</h2>
+        <p class="fragment">Someone with voting access decides you've contributed to PHP "enough."</p>
+        <p class="fragment">Code and docs are best</p>
+        <p class="fragment oversize">Direct Democracy has its pros and cons...</p>
+        <aside class="notes">
+          <ul>
+            <li>I got voting access through docs work, not RFC work</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p>If it doesn't pass</p>
+        <img src="assets/frozen-let-it-go.gif" alt="Elsa from Frozen singing Let It Go" data-credit="https://tenor.com/view/frozen-let-it-go-disney-disney-princess-elsa-gif-3597313">
+        <aside class="notes">
+          <ul>
+            <li>If there was a specific clear issue, try again with that issue fixed</li>
+            <li>Or just wait a few years for the active voters to change</li>
+            <li>Who Votes Matters</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p>If it does pass</p>
+        <img src="assets/congratulations-back-to-work.gif" alt="A celebretory meme, captioned 'Time to get back to work'" data-credit="https://tenor.com/view/congratulations-congrats-gif-8313911042137170180">
+        <ul>
+          <li class="fragment">Finish/polish the PR</li>
+          <li class="fragment">Time varies</li>
+          <li class="fragment">Usual PR review/merge process</li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li>Sometimes takes less than a week, or could be months.</li>
+          </ul>
+        </aside>
+      </section>
     </section>
 
 
