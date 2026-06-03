@@ -21,6 +21,10 @@ img.emoji {
   width: 150px;
 }
 
+dl + p {
+  margin-top: 1em;
+}
+
   </style>
 
 </head>
@@ -105,15 +109,13 @@ img.emoji {
         </aside>
       </section>
       <section>
-        <h2>To join</h2>
-        <div class="fragment">
-          <p>Easy way</p>
-          <p><code>mailto:internals-subscribe@lists.php.net</code></p>
-        </div>
-        <div class="fragment">
-          <p>GUI way</p>
-          <p><a href="https://www.php.net/mailing-lists.php">https://www.php.net/mailing-lists.php</a></p>
-        </div>
+        <h2>To join (easy way)</h2>
+        <p><code>mailto:internals-subscribe@lists.php.net</code></p>
+      </section>
+      <section>
+        <h2>To join (GUI way)</h2>
+        <p><a href="https://www.php.net/mailing-lists.php">https://www.php.net/mailing-lists.php</a></p>
+        <img src="assets/mailing-list-form-highlighted.png" alt="A screenshot of the mailing list signup form">
       </section>
       <section>
         <h2>List Etiquette</h2>
@@ -121,7 +123,7 @@ img.emoji {
           <li class="fragment">Reply-all</li>
           <li class="fragment">Reply at the bottom</li>
           <li class="fragment">Plain text only, no HTML (Markdown is OK)</li>
-          <li class="fragment">Don't Be A Jerk</li>
+          <li class="fragment">Don't Be A Jerk™</li>
         </ul>
       </section>
       <section>
@@ -211,6 +213,7 @@ img.emoji {
             <li>Some devs hate it when I say that, but it's true</li>
             <li>Technically, an implementation is optional, but it's strongly recommended</li>
             <li>Some will vote against RFCs that have no implementation yet</li>
+            <li>Don't assume someone else will do it for you</li>
           </ul>
         </aside>
       </section>
@@ -233,7 +236,7 @@ img.emoji {
       </section>
       <section>
         <h2>Write the RFC</h2>
-        <p>screenshot here</p>
+        <div><img src="assets/rfc-edit.png" class="screenshot" style="max-width: 650px" alt="A screencap of the new-RFC editing window"></div>
         <ul>
           <li class="fragment">Be concise and precise</li>
           <li class="fragment">Use code examples liberally</li>
@@ -271,6 +274,12 @@ img.emoji {
           <li class="fragment">Assume good faith; offer good faith</li>
           <li class="fragment"><em>This is open to everyone, including you!</em></li>
         </ul>
+        <aside class="notes">
+          <ul>
+            <li>Anyone can comment on any RFC.</li>
+            <li>If you have specific expertise/experience, we want to hear from you!</li>
+          </ul>
+        </aside>
       </section>
       <section>
         <h2>Prepare for voting</h2>
@@ -286,7 +295,7 @@ img.emoji {
 
           > Hi all.  I'd like to open discussion on the rot() function
           > proposal.  The RFC is here:
-
+          >
           > https://wiki.php.net/rfc/arbitrary_rot
 
           Hi all.  As the discussion has died down, this is the Intent to Vote
@@ -295,14 +304,24 @@ img.emoji {
         </code></pre>
         <aside class="notes">
           <ul>
-            <li>At least 48-hour heads-up that a vote will start soon</li>
+            <li>At least a 48-hour heads-up that a vote will start soon</li>
           </ul>
         </aside>
       </section>
       <section>
         <h2>Open the vote</h2>
-        <p>screencap of the voting widget</p>
-        <pre class="fragment"><code class="text" data-trim data-noescape>
+        <div><img src="assets/rfc-edit-voting.png" class="screenshot" alt="A screenshot of the edit window on the Wiki, showing the voting widget"></div>
+        <aside class="notes">
+          <ul>
+            <li>2/3 vote required for passage</li>
+            <li>High, but ensures broad support for any change</li>
+            <li>Minimum 2-week voting period</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Open the vote</h2>
+         <pre><code class="text" data-trim data-noescape>
           To: internals@lists.php.net
           From: me@example.com
           Subject: [RFC][Vote] Add configurable rot() function
@@ -317,8 +336,6 @@ img.emoji {
         <aside class="notes">
           <ul>
             <li>State whatever the time was in the widget</li>
-            <li>2/3 vote required for passage</li>
-            <li>High, but ensures broad support for any change</li>
           </ul>
         </aside>
       </section>
@@ -383,17 +400,16 @@ img.emoji {
           </ul>
         </aside>
       </section>
-      <section>
-        <h2>Next November...</h2>
-        <img class="emoji" src="assets/toot.gif" alt="An emoji face with party hat blowing a celebratory kazoo">
-        <aside class="notes">
-          <ul>
-            <li>Enjoy a PHP release with your work in it!</li>
-          </ul>
-        </aside>
-      </section>
     </section>
-
+    <section>
+      <h2>Next November...</h2>
+      <img class="emoji" src="assets/toot.gif" alt="An emoji face with party hat blowing a celebratory kazoo">
+      <aside class="notes">
+        <ul>
+          <li>Enjoy a PHP release with your work in it!</li>
+        </ul>
+      </aside>
+    </section>
 
     <div style="display:none">
       * Why get involved?
